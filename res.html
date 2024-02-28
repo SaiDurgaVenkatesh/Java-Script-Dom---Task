@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+
+    }
+
+    #Navv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid black;
+        backdrop-filter: blur(35px);
+        background: rgba(13, 181, 170, 0.2);
+        /* background: yellow; */
+        height: 100px;
+        font-weight: bold;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+        z-index: 10;
+
+
+
+
+    }
+
+
+
+    #div11 {
+        background-image: url(./HD1.JPG);
+        opacity: 1;
+        height: 135vh;
+        margin-top: -49px;
+        background-repeat: no-repeat;
+
+    }
+
+
+
+    #headd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        font-size: 70px;
+        position: relative;
+        top: 280px;
+        margin-left: 40%;
+        letter-spacing: 13px;
+        color: white;
+    }
+
+    #headd:hover {
+        animation: animate 2s linear infinite;
+
+        /* transform: scale(-1.2); */
+        /* transition-duration: 1.2s;
+        transition-delay: 0.2s; */
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg) translateY(0px);
+            opacity: 1;
+            filter: blur(1px);
+
+
+        }
+
+        100% {
+            transform: rotate(45deg) translateY(-200px);
+            opacity: 0;
+            filter: blur(20px);
+        }
+    }
+
+    #headd:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    #headd:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+
+    #headd:nth-child(3) {
+        animation-delay: 0.5s;
+    }
+
+    #headd:nth-child(4) {
+        animation-delay: 0.7s;
+    }
+
+    #headd:nth-child(5) {
+        animation-delay: 0.9s;
+    }
+
+    #headd:nth-child(6) {
+        animation-delay: 1s;
+    }
+
+    #headd:nth-child(7) {
+        animation-delay: 1.5s;
+    }
+
+    #headd:nth-child(8) {
+        animation-delay: 1.8s;
+    }
+
+    #headd:nth-child(9) {
+        animation-delay: 1.9s;
+    }
+
+    #headd:nth-child(10) {
+        animation-delay: 2s;
+    }
+
+    #headd:nth-child(11) {
+        animation-delay: 2.5s;
+    }
+
+    #headd:nth-child(12) {
+        animation-delay: 5s;
+    }
+
+
+
+
+
+
+
+    #but {
+        width: 10%;
+        height: 50px;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 340px;
+        margin-left: 68%;
+        color: black;
+
+    }
+
+    #but:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.3);
+        transition-duration: 1.2s;
+        transition-delay: 0.2s;
+    }
+
+    #maq {
+        border: 1px solid black;
+        margin-top: 1Px;
+        row-gap: 10px;
+
+
+    }
+
+    #d3 {
+        /* text-align: center; */
+        background-color: green;
+        height: 90vh;
+        margin-top: -4px;
+    }
+
+    #i3 {
+        width: 45%;
+        margin-left: 50%;
+        margin-top: -220px;
+        border-radius: 20px;
+
+    }
+
+    #i3:hover {
+        /* transform: matrix(1, 2, 3, 4, 5, 6); */
+        transition-duration: 1.8s;
+        transition-delay: 0.3s;
+    }
+
+
+    #hh {
+        margin-left: 10%;
+        position: relative;
+        top: 200px;
+        letter-spacing: 3px;
+        color: black;
+
+    }
+
+    #pp {
+        width: 30%;
+        margin-top: 250px;
+        margin-left: 140px;
+        color: white;
+        letter-spacing: 1px;
+
+    }
+
+    #btn {
+        width: 9%;
+        border-radius: 20px;
+        height: 40px;
+        margin-left: 200px;
+        position: relative;
+        top: -120px;
+        left: 70px;
+    }
+
+    #btn:hover {
+        background-color: rebeccapurple;
+        color: black;
+    }
+
+    #hhh {
+        letter-spacing: 6px;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 20px;
+
+
+    }
+
+    #ne1 {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 30px;
+        /* margin-left: 20px; */
+        justify-content: center;
+        margin-top: 40px;
+        height: 90vh;
+    }
+
+    #pic:hover {
+        transform: scale(1.2);
+        transition-duration: 1.8s;
+        transition-delay: 0.3s;
+    }
+
+    #pic {
+        height: 60vh;
+        width: 400px;
+
+    }
+
+    #N1 {
+        border: 1px solid black;
+        background-image: url(./main.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #N2 {
+        background-color: white;
+        height: 60vh;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: 80px;
+        border-radius: 10px;
+
+    }
+
+    #N2:hover {
+        /* transform: skewY(20deg); */
+        transform: rotate(40deg);
+        transition-duration: 1.8s;
+        transition-delay: 0.3s;
+    }
+
+    #hrro {
+        position: relative;
+        top: -140px;
+        left: 60px;
+
+    }
+
+    #hrro1 {
+
+        letter-spacing: 1px;
+        line-height: 1.2;
+        position: relative;
+        right: 50px;
+        top: 20px;
+        word-spacing: 4px;
+
+
+
+    }
+
+
+
+    #N3 {
+        border: 1px solid black;
+        /* background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+
+        height: 175vh;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        background-color: palevioletred;
+
+        /* justify-content: center;
+        align-items: center;
+        align-content: center; */
+    }
+
+
+
+    #nu1 {
+        margin-left: 700px;
+        margin-top: 60px;
+    }
+
+
+
+    #mee {
+        /* background-color: black; */
+        background: url(./poo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+        width: 40%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center; */
+        position: absolute;
+        left: 450px;
+        border-radius: 10px;
+        margin-top: 160px;
+    }
+
+    #mee:hover {
+        transform: translate3d(12px, 50%, 3em);
+        transition-duration: 1.8s;
+        transition-delay: 0.3s;
+
+    }
+
+    #h11 {
+        margin-top: 600px;
+        margin-left: -500px;
+        letter-spacing: 5px;
+    }
+
+    #h12 {
+        margin-top: 600px;
+        letter-spacing: 5px;
+        position: relative;
+        left: 750px;
+
+
+    }
+
+    #imk {
+        width: 30%;
+        height: 500px;
+        margin-top: 690px;
+        position: relative;
+        left: -400px;
+        border-radius: 10px;
+    }
+
+    #imk:hover {
+        transform: scale3d(1.5, 1.2, 0.3);
+        transition-duration: 1.8s;
+        transition-delay: 0.3s;
+    }
+
+
+    #imk1 {
+        width: 26%;
+        height: 500px;
+        margin-top: 690px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    #imk1:hover {
+        /* transform: matrix(1, 2, 3, 4, 5, 6); */
+        transform: scale3d(1.5, 1.2, 0.3);
+
+        transition-duration: 1.8s;
+        transition-delay: 0.3s;
+    }
+
+    #vn {
+        border: 0px solid black;
+        height: 80vh;
+
+    }
+
+    #frm {
+        width: 100%;
+        height: 80vh;
+
+    }
+
+    #fuo {
+        height: 20vh;
+        background: black;
+        border: 1px solid black;
+        width: 100%;
+        /* background-image: url(./ven1.jpg); */
+        /* width: 100%;  */
+    }
+
+    #pooo {
+        /* width: 80%; */
+        color: white;
+        letter-spacing: 2px;
+        font-size: 20px;
+        margin-left: 600px;
+        margin-top: 50px;
+
+    }
+</style>
+
+<body>
+
+
+
+    <script>
+        var main = document.createElement("div")
+        document.body.append(main)
+        main.setAttribute("id", "Navv")
+
+
+        var navv = document.createElement("li")
+        main.appendChild(navv)
+        navv.innerText = "Restaurants"
+
+
+        var navv = document.createElement("li")
+        main.appendChild(navv)
+        navv.innerText = "Items"
+
+
+
+        var imgg = document.createElement("img")
+        main.appendChild(imgg)
+        imgg.setAttribute("src", "./head1.png")
+        imgg.setAttribute("width", "120px")
+
+        var navv = document.createElement("li")
+        main.appendChild(navv)
+        navv.innerText = "Awards & Press"
+
+
+
+        // var imgg = document.createElement("img")
+        // main.appendChild(imgg)
+        // imgg.setAttribute("src", "./head1.png")
+        // imgg.setAttribute("width", "100px")
+
+
+
+        var navv = document.createElement("li")
+        main.appendChild(navv)
+        navv.innerText = "Contact"
+
+
+
+        var navv = document.createElement("li")
+        main.appendChild(navv)
+        navv.innerText = "About"
+
+
+
+
+
+        var main1 = document.createElement("div")
+        document.body.append(main1)
+        main1.setAttribute("id", "div11")
+
+
+
+
+
+        // var imm2=document.createElement("img")
+        // main1.appendChild(imm2)
+        // imm2.setAttribute("src","HD1.jpg")
+        // imm2.setAttribute("width","100%")
+
+
+        var head = document.createElement("h1")
+        main1.append(head)
+        head.innerText = "THE ART OF FOOD"
+        head.setAttribute("id", "headd")
+
+
+        var boo = document.createElement("button")
+        main1.appendChild(boo)
+        boo.innerText = "View More"
+        boo.setAttribute("id", "but")
+
+
+
+        var divv3 = document.createElement("marquee")
+        document.body.appendChild(divv3)
+        divv3.setAttribute("id", "maq")
+
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m1.png")
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m2.png")
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m3.png")
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m4.png")
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m5.png")
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m6.png")
+
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m14.png")
+
+
+        var img1 = document.createElement("img")
+        divv3.appendChild(img1)
+        img1.setAttribute("src", "./m9.png")
+
+
+        var div3 = document.createElement("div")
+        document.body.append(div3)
+        div3.setAttribute("id", "d3")
+
+
+
+
+        var our = document.createElement("h1")
+        div3.appendChild(our)
+        our.innerText = "Our Story"
+        our.setAttribute("id", "hh")
+
+
+        var our1 = document.createElement("p")
+        div3.appendChild(our1)
+        our1.innerText = "Ohri's culinary legacy dates back to 1976 when visionary entrepreneur, Ravi Ohri, laid the foundation for a futuristic brand in the hotel industry. Capitalizing on the success of its very first venture, Hotel Baseraa, the label soon spread its wings across Hyderabad and established its place as a chain to reckon with."
+        our1.setAttribute("id", "pp")
+
+
+
+
+
+        var im3 = document.createElement("img")
+        div3.appendChild(im3)
+        im3.setAttribute("src", "./order.jpg")
+        im3.setAttribute("id", "i3")
+
+
+        var Btn = document.createElement("button")
+        div3.appendChild(Btn)
+        Btn.innerText = "Know More"
+        Btn.setAttribute("id", "btn")
+
+
+        var next2 = document.createElement("div")
+        document.body.appendChild(next2)
+
+        var next1 = document.createElement("p")
+        next2.appendChild(next1)
+        next1.innerText = "Items"
+        next1.setAttribute("id", "hhh")
+
+
+
+
+
+
+
+
+        var next = document.createElement("div")
+        document.body.appendChild(next)
+        next.setAttribute("id", "ne1")
+
+
+
+        // var next1 = document.createElement("p")
+        // next2.appendChild(next1)
+        // next1.innerText = "Restaurants"
+        // next1.setAttribute("id", "hhh")
+
+
+
+
+
+
+        var imp = document.createElement("img")
+        next.appendChild(imp)
+        imp.setAttribute("src", "./t2.jpg")
+        imp.setAttribute("id", "pic")
+
+
+
+
+        var imp = document.createElement("img")
+        next.appendChild(imp)
+        imp.setAttribute("src", "./t1.jpg")
+        imp.setAttribute("id", "pic")
+
+
+
+
+
+        var imp = document.createElement("img")
+        next.appendChild(imp)
+        imp.setAttribute("src", "./t4.jpg")
+        imp.setAttribute("id", "pic")
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var sa = document.createElement("div")
+        document.body.appendChild(sa)
+        sa.setAttribute("id", "N1")
+
+
+
+        var no = document.createElement("div")
+        sa.appendChild(no)
+        no.setAttribute("id", "N2")
+
+        var hrr = document.createElement("h2")
+        no.appendChild(hrr)
+        hrr.innerText = "Quality of Life"
+        hrr.setAttribute("id", "hrro")
+
+
+
+
+        var hrr1 = document.createElement("p")
+        no.appendChild(hrr1)
+        hrr1.innerText = "Restaurants enhance the quality of life in communities by offering access to convenient, delicious, and diverse dining options. They provide a break from routine cooking, allowing people to enjoy professionally prepared meals in a relaxed and welcoming atmosphere."
+        hrr1.setAttribute("id", "hrro1")
+
+
+
+
+
+
+        var n3 = document.createElement("div")
+        document.body.appendChild(n3)
+        n3.setAttribute("id", "N3")
+
+
+
+        var nu = document.createElement("h1")
+        n3.appendChild(nu)
+        nu.innerText = "Menu"
+        nu.setAttribute("id", "nu1")
+
+
+
+        var Div33 = document.createElement("div")
+        n3.appendChild(Div33)
+        Div33.setAttribute("id", "mee")
+
+
+
+        var hed = document.createElement("h1")
+        n3.appendChild(hed)
+        hed.innerText = "Veg"
+        hed.setAttribute("id", "h11")
+
+        var hed2 = document.createElement("h1")
+        n3.appendChild(hed2)
+        hed2.innerText = "Non-Veg"
+        hed2.setAttribute("id", "h12")
+
+
+
+
+
+
+        var div4 = document.createElement("img")
+        n3.appendChild(div4)
+        div4.setAttribute("src", "./veg1.jpg")
+        div4.setAttribute("id", "imk")
+
+
+
+
+
+        var div5 = document.createElement("img")
+        n3.appendChild(div5)
+        div5.setAttribute("src", "./nonveg.jpg")
+        div5.setAttribute("id", "imk1")
+
+
+
+
+
+        var dp = document.createElement("div")
+        document.body.appendChild(dp)
+        dp.setAttribute("id", "vn")
+
+
+        var fm = document.createElement("iframe")
+        dp.appendChild(fm)
+        fm.setAttribute("src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.301909818844!2d78.3995478750127!3d17.49309568341216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1708247018453!5m2!1sen!2sin")
+        fm.setAttribute("id", "frm")
+
+
+
+
+
+        var fu = document.createElement("footer")
+        document.body.appendChild(fu)
+        fu.setAttribute("id", "fuo")
+
+
+
+        var hv = document.createElement("p")
+        fu.appendChild(hv)
+        hv.innerText = "@All Rights Are Receviced"
+        hv.setAttribute("id", "pooo")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
