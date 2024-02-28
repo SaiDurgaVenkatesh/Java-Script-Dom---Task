@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./hp1.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+        }
+
+        #main1 {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        #main11 {
+            display: flex;
+            width: 80%;
+            gap: 50px;
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            margin-left: 200px;
+            margin-top: 120px;
+
+        }
+
+        #pic {
+            width: 500px;
+            border: 1px solid rgb(145, 58, 58);
+            box-shadow: 10px 10px 70px 40px #00994d;
+
+
+
+            /* height: 500px; */
+
+        }
+
+        #pic1 {
+            width: 500px;
+            height: 46vh;
+            border: 1px solid black;
+            box-shadow: 10px 10px 70px 30px #ff0080;
+
+
+
+
+        }
+
+        #but {
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: 360px;
+            left: -320px;
+            border-radius: 10px;
+            color: black;
+            background-color: #ff0080;
+        }
+
+        #but1 {
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: 360px;
+            left: -340px;
+            border-radius: 10px;
+            color: black;
+            background-color: #00994d;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <script>
+        var main = document.createElement("div")
+        document.body.appendChild(main)
+        main.setAttribute("id", "main1")
+
+
+        var head = document.createElement("h1")
+        main.appendChild(head)
+        head.innerText = "Choose a One"
+
+
+        var main2 = document.createElement("div")
+        document.body.appendChild(main2)
+        main2.setAttribute("id", "main11")
+
+
+        var imm = document.createElement("img")
+        main2.appendChild(imm)
+        imm.setAttribute("src", "./chi.jpg")
+        imm.setAttribute("id", "pic")
+
+
+
+        var btn = document.createElement("button")
+        main2.appendChild(btn)
+        btn.setAttribute("id", "but")
+
+
+
+        var bt = document.createElement("a")
+        btn.appendChild(bt)
+        bt.setAttribute("href", "./cards.html")
+        bt.innerText = "Shopping"
+
+
+
+
+
+
+
+
+
+
+
+        var imm1 = document.createElement("img")
+        main2.appendChild(imm1)
+        imm1.setAttribute("src", "./hv.jpg")
+        imm1.setAttribute("id", "pic1")
+
+
+
+
+
+        var btn1 = document.createElement("button")
+        main2.appendChild(btn1)
+        btn1.setAttribute("id", "but1")
+
+
+        var ao = document.createElement("a")
+        btn1.append(ao)
+        ao.setAttribute("href", "./res.html")
+        ao.innerText = "Restaurant"
+
+    </script>
+
+</body>
+
+</html>

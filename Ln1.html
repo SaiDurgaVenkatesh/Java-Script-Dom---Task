@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 90vh;
+            background-image: url(./hp.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            flex-wrap: wrap;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            color: rgba(182, 13, 224, 0.9);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            /* gap: 10px; */
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        ::placeholder {
+            font-size: 15px;
+            position: absolute;
+            left: 10px;
+            color: rgba(230, 69, 10, 0.881);
+        }
+
+        #pwd,
+        #email,
+        #btn {
+            height: 50px;
+            width: 300px;
+        }
+
+        #pwd {
+            margin-top: 20px;
+        }
+
+        #chb {
+            /* margin-right: 150px; */
+            position: relative;
+            left: -140px;
+            top: 2px;
+            width: 100px;
+            height: 15px;
+            margin-top: 20px;
+        }
+
+        label {
+            /* margin-top: -25px;
+            margin-left: 30px; */
+            position: relative;
+            left: -60px;
+            bottom: 20px;
+            /* color: rgb(236, 230, 230); */
+            font-size: 20px;
+            color: #005ce6;
+            font-weight: bold;
+        }
+
+        #btn {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #29a329;
+            font-weight: bold;
+        }
+
+        #divnew {
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid black; */
+            width: 200px;
+
+        }
+
+        img {
+            width: 25px;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+
+        #divnew1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        var divtag = document.createElement("div")
+        document.body.appendChild(divtag);
+        divtag.setAttribute("id", "main")
+
+
+        var h2tag = document.createElement("h2")
+        divtag.appendChild(h2tag);
+        h2tag.innerText = "LOG IN"
+
+        var formtag = document.createElement("form")
+        divtag.appendChild(formtag)
+        formtag.setAttribute("action", "./3rdp.html")
+
+
+        var inputtag = document.createElement("input")
+        formtag.appendChild(inputtag)
+        inputtag.setAttribute("type", "email");
+        inputtag.setAttribute("id", "email");
+
+        inputtag.setAttribute("name", "email");
+        inputtag.setAttribute("PlaceHolder", "Email / User Name");
+
+
+        var inputtag = document.createElement("input")
+        formtag.appendChild(inputtag)
+        inputtag.setAttribute("type", "password");
+        inputtag.setAttribute("id", "pwd");
+        inputtag.setAttribute("name", "Password");
+        inputtag.setAttribute("PlaceHolder", "Password");
+
+        var inputtag = document.createElement("input")
+        formtag.appendChild(inputtag)
+        inputtag.setAttribute("type", "checkbox");
+        inputtag.setAttribute("id", "chb");
+
+        var labeltag = document.createElement("label");
+        formtag.appendChild(labeltag);
+
+        labeltag.setAttribute("for", "chb");
+        labeltag.innerText = "Remember me";
+
+        var inputtag = document.createElement("input")
+        formtag.appendChild(inputtag)
+        inputtag.setAttribute("type", "submit");
+        inputtag.setAttribute("id", "btn");
+        inputtag.setAttribute("name", "btn");
+        inputtag.setAttribute("value", "Log In");
+
+
+
+        // var ao = document.createElement(a)
+        // inputtag.append(ao)
+        // a0.setAttribute("href", "./3rdp.html")
+
+
+
+
+
+        var divnew = document.createElement("div")
+        divtag.appendChild(divnew)
+        divnew.setAttribute("id", "divnew")
+
+        // var img1 = document.createElement("img");
+        // divnew.appendChild(img1);
+        // img1.setAttribute("src", "./google.png");
+
+        // var img1 = document.createElement("img");
+        // divnew.appendChild(img1);
+        // img1.setAttribute("src", "./linkedin.png");
+
+        // var img1 = document.createElement("img");
+        // divnew.appendChild(img1);
+        // img1.setAttribute("src", "./facebook.png");
+
+        // var img1 = document.createElement("img");
+        // divnew.appendChild(img1);
+        // img1.setAttribute("src", "./github.png");
+
+
+
+        divnew1 = document.createElement("div");
+        divtag.appendChild(divnew1)
+        divnew1.setAttribute("id", "divnew1")
+
+        var ptag = document.createElement("p");
+        divnew1.appendChild(ptag);
+        ptag.innerText = "Not a member? "
+
+        var atag = document.createElement("a")
+        ptag.appendChild(atag);
+
+        atag.innerText = "Sign Up"
+        atag.setAttribute("href", ".#")
+
+
+
+        var ao = document.createElement(a)
+            .append(ao)
+        a0.setAttribute("href", "./3rdp.html")
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
